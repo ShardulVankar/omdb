@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>OMDB</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		
+		<script src="jquery-3.3.1.min.js"></script>
+		<script src="omdb.js"></script>
+		
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="card" style="width:100%;">
+						<div class="card-body">
+						<h5 class="card-title">Search</h5>
+						<form>
+							<div class="form-group">
+							<label for="title">Title:</label>
+							<input type="text" class="form-control" id="title" placeholder="Enter the title" style="width:200px">
+							
+							<label for="title">ID:</label>
+							<input type="text" class="form-control" id="movieId" placeholder="Enter the ID" style="width:200px">
+							
+							<label for="title">Year:</label>
+							<input type="text" class="form-control" id="year" placeholder="Enter the year" style="width:200px">
+							
+							<label for="title">plot:</label>
+							<select class="form-control" id="plot" style="width:200px">
+								<option>Short</option>
+								<option>Full</option>
+							</select>
+							
+							<label for="title">Response:</label>
+							<input type="text" class=" text-muted form-control" placeholder="JSON" id="response" style="width:200px" disabled=true>
+							</div>
+							<a href="#" id="search" class="btn btn-primary">Search</a>
+							<a href="#" id="reset" class="btn btn-secondary">Reset</a>
+						</form>
+						</div>
+					</div>
+					
+					<div class="card" style="width:100%;">
+						<div class="card-body">
+						<h5 class="card-title">Result</h5>
+						<form id="result">
+							<div id="img1"></div>
+							<div id="title1"><b>Title: </b><label id="title2"></label></div>
+							<br/>
+							<div id="id1"><b>ID: </b><label id="id2"></label></div><br/>
+							<div id="year1"><b>Year: </b><label id="year2"></label></div><br/>
+							
+							<div id="rated"><b>Rated: </b><label id="rated1"></label></div><br/>
+							<div id="released"><b>Released: </b><label id="released1"></label></div><br/>
+							<div id="runtime"><b>Runtime: </b><label id="runtime1"></label></div><br/>
+							
+							<div id="genre"><b>genre: </b><label id="genre1"></label></div><br/>
+							<div id="director"><b>Director: </b><label id="director1"></label></div><br/>
+							<div id="writer"><b>Writer: </b><label id="writer1"></label></div><br/>
+							
+							<div id="actors"><b>Actors: </b><label id="actors1"></label></div><br/>
+							<div id="plot"><b>Plot: </b><label id="plot1"></label></div><br/>
+							<div id="language"><b>Language: </b><label id="language1"></label></div><br/>
+							
+							<div id="country"><b>Country: </b><label id="country1"></label></div><br/>
+							<div id="awards"><b>Awards: </b><label id="awards1"></label></div><br/>
+							
+							<div>
+								<fieldset>
+								
+							<legend><b>Ratings: </b></legend>
+								<div id="subRatings">
+									<div id="subRatings1"></div>
+								</div>
+								</fieldset>
+							</div>
+							
+							<div id="metascore"><b>MetaScore: </b><label id="metascore1"></label></div><br/>
+							<div id="imdbRating"><b>imdbRating: </b><label id="imdbRating1"></label></div><br/>
+							<div id="imdbVotes"><b>imdbVotes: </b><label id="imdbVotes1"></label></div><br/>
+							
+							<div id="type"><b>Type: </b><label id="type1"></label></div><br/>
+							<div id="dvd"><b>DVD: </b><label id="dvd1"></label></div><br/>
+						<div id="boxoffice"><b>BoxOffice: </b>	<label id="boxoffice1"></label></div><br/>
+							
+						<div id="production"><b>Production: </b>	<label id="production1"></label></div><br/>
+						<div id="website"><b>Website: </b>	<label id="website1"></label></div><br/>
+							<div id="response"><b>Response: </b><label id="response1"></label></div><br/>
+						</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
