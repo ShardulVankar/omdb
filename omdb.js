@@ -161,7 +161,7 @@ $(document).ready(function(){
 			alert("error");
 		},
 		
-		timeout:3000
+		timeout:5000
 	})
 }
 
