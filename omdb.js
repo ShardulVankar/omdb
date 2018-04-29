@@ -4,6 +4,10 @@ $(document).ready(function(){
 		
 		getAllData();
 	})
+	
+	$('#reset').click(function(){
+		resetAllData();
+	})
 });
 
  function getAllData(){
@@ -151,7 +155,13 @@ $(document).ready(function(){
 				}
 			}
 			
-		}
+		},
+		
+		error:(data1)=>{
+			alert("error");
+		},
+		
+		timeout:3000
 	})
 }
 
@@ -200,4 +210,10 @@ function getMovieData(data){
 	$('#website').append($('#website1').text(data.Website));
 	$('#response').append($('#response1').text(data.Response));
 	
+}
+
+function resetAllData(){
+	$('#title').val("");
+	$('#movieId').val("");
+	$('#year').val("");
 }
